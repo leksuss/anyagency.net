@@ -15,11 +15,15 @@
 
     <!-- Profile Image Placeholder -->
     <div
-      class="w-full aspect-square bg-gradient-to-br relative overflow-hidden"
+      class="w-full aspect-square bg-gradient-to-br relative overflow-hidden group/image"
       :class="gradientClasses[blogger.platform]"
     >
       <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-6xl">{{ platformEmojis[blogger.platform] }}</div>
+        <Icon
+          :name="platformIcons[blogger.platform]"
+          size="2xl"
+          class="w-20 h-20 text-white/80 group-hover/image:scale-110 transition-transform duration-300"
+        />
       </div>
     </div>
 
@@ -67,11 +71,11 @@ const platformStyles = {
   vk: 'bg-blue-700/50 text-white border border-blue-600/30',
 }
 
-const platformEmojis = {
-  tiktok: '🎵',
-  youtube: '▶️',
-  telegram: '✈️',
-  vk: '🌐',
+const platformIcons = {
+  tiktok: 'tiktok',
+  youtube: 'youtube',
+  telegram: 'telegram',
+  vk: 'vk',
 }
 
 const gradientClasses = {

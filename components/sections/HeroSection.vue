@@ -41,9 +41,9 @@
           <div
             v-for="platform in platforms"
             :key="platform.name"
-            class="px-6 py-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 flex items-center gap-3 hover:bg-white/10 hover:scale-105 transition-all"
+            class="px-6 py-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 flex items-center gap-3 hover:bg-white/10 hover:scale-105 hover:border-neon-purple/50 transition-all group"
           >
-            <span class="text-2xl">{{ platform.icon }}</span>
+            <Icon :name="platform.icon" size="md" :class="['transition-colors', platform.color]" />
             <span class="font-semibold">{{ platform.name }}</span>
           </div>
         </div>
@@ -81,10 +81,10 @@ const sectionRef = ref<HTMLElement | null>(null)
 const { isVisible } = useScrollAnimation(sectionRef, { threshold: 0.3 })
 
 const platforms = [
-  { name: 'TikTok', icon: '🎵' },
-  { name: 'YouTube', icon: '▶️' },
-  { name: 'Telegram', icon: '✈️' },
-  { name: 'VK', icon: '🌐' },
+  { name: 'TikTok', icon: 'tiktok', color: 'text-white group-hover:text-neon-pink' },
+  { name: 'YouTube', icon: 'youtube', color: 'text-white group-hover:text-red-500' },
+  { name: 'Telegram', icon: 'telegram', color: 'text-white group-hover:text-neon-cyan' },
+  { name: 'VK', icon: 'vk', color: 'text-white group-hover:text-blue-500' },
 ]
 
 const openModal = () => {

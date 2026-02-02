@@ -5,7 +5,7 @@ export const services: Service[] = [
     id: 'influencer-campaigns',
     title: 'Influencer Campaigns',
     description: 'Full-service campaign management from strategy to execution. We handle everything from creator selection to performance tracking.',
-    icon: '🎯',
+    icon: 'target',
     features: [
       'Campaign strategy & planning',
       'Creator matching & outreach',
@@ -17,7 +17,7 @@ export const services: Service[] = [
     id: 'multi-platform-reach',
     title: 'Multi-Platform Reach',
     description: 'Coordinated campaigns across TikTok, YouTube, Telegram, and VKontakte. Maximize your brand exposure with synchronized multi-platform strategies.',
-    icon: '🌐',
+    icon: 'globe',
     features: [
       'Cross-platform coordination',
       'Unified brand messaging',
@@ -29,7 +29,7 @@ export const services: Service[] = [
     id: 'content-strategy',
     title: 'Content Strategy',
     description: 'Creative direction and performance optimization. Our team ensures your message resonates with target audiences while maintaining authenticity.',
-    icon: '✨',
+    icon: 'sparkles',
     features: [
       'Creative brief development',
       'Content guidelines & review',
@@ -41,7 +41,7 @@ export const services: Service[] = [
     id: 'analytics-reporting',
     title: 'Analytics & Reporting',
     description: 'Real-time campaign tracking with detailed ROI analysis. Get transparent insights into your campaign performance with actionable recommendations.',
-    icon: '📊',
+    icon: 'chart',
     features: [
       'Real-time dashboards',
       'Engagement metrics',

@@ -8,7 +8,9 @@
     <!-- Content -->
     <div class="relative z-10">
       <!-- Icon -->
-      <div class="text-6xl mb-6">{{ service.icon }}</div>
+      <div class="mb-6">
+        <Icon :name="service.icon" size="2xl" class="text-neon-purple group-hover:text-neon-cyan transition-colors duration-300" />
+      </div>
 
       <!-- Title -->
       <h3 class="text-2xl font-outfit font-bold mb-4 group-hover:text-gradient transition-all">
@@ -27,7 +29,9 @@
           :key="index"
           class="flex items-start gap-2 text-sm text-dark-gray"
         >
-          <span class="text-neon-cyan mt-1">✓</span>
+          <svg class="w-4 h-4 mt-0.5 text-neon-cyan flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
           <span>{{ feature }}</span>
         </li>
       </ul>

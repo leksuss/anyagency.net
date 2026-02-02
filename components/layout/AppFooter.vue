@@ -30,17 +30,17 @@
           <h3 class="text-lg font-outfit font-bold mb-4">Get in Touch</h3>
           <ul class="space-y-3 mb-6">
             <li class="text-dark-gray text-sm flex items-start gap-2">
-              <span class="text-neon-cyan">📧</span>
+              <Icon name="email" size="sm" class="text-neon-cyan mt-0.5" />
               <a href="mailto:hello@anyagency.net" class="hover:text-white transition-colors">
                 hello@anyagency.net
               </a>
             </li>
             <li class="text-dark-gray text-sm flex items-start gap-2">
-              <span class="text-neon-cyan">📞</span>
+              <Icon name="phone" size="sm" class="text-neon-cyan mt-0.5" />
               <span>+7 (727) 250-XX-XX</span>
             </li>
             <li class="text-dark-gray text-sm flex items-start gap-2">
-              <span class="text-neon-cyan">📍</span>
+              <Icon name="location" size="sm" class="text-neon-cyan mt-0.5" />
               <span>Dostyk Avenue 123, Office 456<br>Almaty, Kazakhstan 050010</span>
             </li>
           </ul>
@@ -54,7 +54,7 @@
               class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-dark-gray hover:text-white hover:bg-white/10 transition-all hover:scale-110"
               :aria-label="social.name"
             >
-              {{ social.icon }}
+              <Icon :name="social.icon" size="md" />
             </a>
           </div>
         </div>
@@ -88,9 +88,9 @@ const quickLinks = [
 ]
 
 const socialLinks = [
-  { name: 'Instagram', href: '#', icon: '📷' },
-  { name: 'LinkedIn', href: '#', icon: '💼' },
-  { name: 'Telegram', href: '#', icon: '✈️' },
-  { name: 'TikTok', href: '#', icon: '🎵' },
+  { name: 'Instagram', href: '#', icon: 'instagram' },
+  { name: 'LinkedIn', href: '#', icon: 'linkedin' },
+  { name: 'Telegram', href: '#', icon: 'telegram' },
+  { name: 'TikTok', href: '#', icon: 'tiktok' },
 ]
 </script>

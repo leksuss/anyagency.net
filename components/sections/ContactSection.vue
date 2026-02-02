@@ -22,7 +22,9 @@
             <div class="space-y-6">
               <!-- Email -->
               <div class="flex items-start gap-4 p-6 bg-dark-bg rounded-2xl border border-white/10 hover:border-neon-purple/50 transition-all">
-                <div class="text-3xl">📧</div>
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-neon-purple/10 flex items-center justify-center">
+                  <Icon name="email" size="lg" class="text-neon-purple" />
+                </div>
                 <div>
                   <div class="text-dark-gray text-sm mb-1">Email</div>
                   <a href="mailto:hello@anyagency.net" class="text-lg font-semibold hover:text-neon-purple transition-colors">
@@ -33,7 +35,9 @@
 
               <!-- Phone -->
               <div class="flex items-start gap-4 p-6 bg-dark-bg rounded-2xl border border-white/10 hover:border-neon-cyan/50 transition-all">
-                <div class="text-3xl">📞</div>
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-neon-cyan/10 flex items-center justify-center">
+                  <Icon name="phone" size="lg" class="text-neon-cyan" />
+                </div>
                 <div>
                   <div class="text-dark-gray text-sm mb-1">Phone</div>
                   <a href="tel:+77272500000" class="text-lg font-semibold">
@@ -44,7 +48,9 @@
 
               <!-- Address -->
               <div class="flex items-start gap-4 p-6 bg-dark-bg rounded-2xl border border-white/10 hover:border-neon-pink/50 transition-all">
-                <div class="text-3xl">📍</div>
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-neon-pink/10 flex items-center justify-center">
+                  <Icon name="location" size="lg" class="text-neon-pink" />
+                </div>
                 <div>
                   <div class="text-dark-gray text-sm mb-1">Office</div>
                   <div class="text-lg font-semibold">
@@ -64,10 +70,10 @@
                 v-for="social in socialLinks"
                 :key="social.name"
                 :href="social.href"
-                class="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center text-2xl hover:bg-white/10 hover:scale-110 transition-all neon-glow-hover"
+                class="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 hover:scale-110 transition-all neon-glow-hover"
                 :aria-label="social.name"
               >
-                {{ social.icon }}
+                <Icon :name="social.icon" size="lg" class="text-white" />
               </a>
             </div>
           </div>
@@ -113,10 +119,10 @@ const sectionRef = ref<HTMLElement | null>(null)
 const { isVisible } = useScrollAnimation(sectionRef, { threshold: 0.1 })
 
 const socialLinks = [
-  { name: 'Instagram', href: '#', icon: '📷' },
-  { name: 'LinkedIn', href: '#', icon: '💼' },
-  { name: 'Telegram', href: '#', icon: '✈️' },
-  { name: 'TikTok', href: '#', icon: '🎵' },
+  { name: 'Instagram', href: '#', icon: 'instagram' },
+  { name: 'LinkedIn', href: '#', icon: 'linkedin' },
+  { name: 'Telegram', href: '#', icon: 'telegram' },
+  { name: 'TikTok', href: '#', icon: 'tiktok' },
 ]
 
 const openModal = () => {

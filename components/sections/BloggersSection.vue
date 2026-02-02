@@ -44,7 +44,9 @@
 
       <!-- Empty State -->
       <div v-if="filteredBloggers.length === 0" class="text-center py-16">
-        <div class="text-6xl mb-4">🔍</div>
+        <div class="mb-4 flex justify-center">
+          <Icon name="search" size="2xl" class="w-16 h-16 text-dark-gray" />
+        </div>
         <p class="text-dark-gray text-lg">No creators found for this platform</p>
       </div>
     </div>

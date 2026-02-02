@@ -1,7 +1,9 @@
 <template>
-  <div class="text-center p-8 rounded-2xl bg-dark-charcoal border border-white/10 card-lift">
+  <div class="text-center p-8 rounded-2xl bg-dark-charcoal border border-white/10 card-lift hover:border-neon-purple/30 transition-all group">
     <!-- Icon -->
-    <div class="text-5xl mb-4">{{ stat.icon }}</div>
+    <div class="mb-4 flex justify-center">
+      <Icon :name="stat.icon" size="2xl" class="text-neon-cyan group-hover:text-neon-purple transition-colors duration-300" />
+    </div>
 
     <!-- Value with Animation -->
     <div class="text-5xl md:text-6xl font-bebas text-gradient mb-2">

@@ -36,28 +36,28 @@ const stats: Stat[] = [
     id: 'reach',
     label: 'Total Reach',
     value: '200M',
-    icon: '🌍',
+    icon: 'globe-world',
     suffix: '+',
   },
   {
     id: 'creators',
     label: 'Exclusive Creators',
     value: '100',
-    icon: '⭐',
+    icon: 'star',
     suffix: '+',
   },
   {
     id: 'campaigns',
     label: 'Campaigns Delivered',
     value: '500',
-    icon: '🚀',
+    icon: 'rocket',
     suffix: '+',
   },
   {
     id: 'platforms',
     label: 'Major Platforms',
     value: '4',
-    icon: '📱',
+    icon: 'smartphone',
   },
 ]
 </script>

@@ -33,7 +33,9 @@
           :class="{ 'animate-slide-up': isVisible }"
           :style="{ animationDelay: `${index * 0.1}s` }"
         >
-          <div class="text-5xl mb-4">{{ item.icon }}</div>
+          <div class="mb-4 flex justify-center">
+            <Icon :name="item.icon" size="xl" class="text-neon-purple" />
+          </div>
           <h3 class="text-xl font-outfit font-bold mb-2">{{ item.title }}</h3>
           <p class="text-dark-gray text-sm">{{ item.description }}</p>
         </div>
@@ -55,8 +57,8 @@
             :style="{ animationDelay: `${(index + 4) * 0.1}s` }"
           >
             <!-- Profile Image Placeholder -->
-            <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-neon-purple/30 to-neon-cyan/30 flex items-center justify-center text-5xl">
-              {{ member.emoji }}
+            <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-neon-purple/30 to-neon-cyan/30 flex items-center justify-center">
+              <Icon :name="member.icon" size="2xl" class="text-white" />
             </div>
 
             <!-- Name & Role -->
@@ -76,22 +78,22 @@ const { isVisible } = useScrollAnimation(sectionRef, { threshold: 0.1 })
 
 const differentiators = [
   {
-    icon: '🎯',
+    icon: 'shield-check',
     title: 'Exclusive Access',
     description: 'Direct partnerships with 100+ top-tier creators',
   },
   {
-    icon: '📊',
+    icon: 'chart',
     title: 'Data-Driven',
     description: 'Performance optimization and transparent analytics',
   },
   {
-    icon: '🌐',
+    icon: 'globe',
     title: 'Multi-Platform',
     description: 'Coordinated campaigns across 4 major platforms',
   },
   {
-    icon: '✨',
+    icon: 'lightning',
     title: '500+ Campaigns',
     description: 'Proven track record of successful collaborations',
   },
@@ -102,25 +104,25 @@ const team = [
     name: 'Amir Bekzhan',
     role: 'CEO & Founder',
     bio: '10+ years in digital marketing',
-    emoji: '👨‍💼',
+    icon: 'user-ceo',
   },
   {
     name: 'Alina Nurzhanova',
     role: 'Creative Director',
     bio: 'Former content creator turned strategist',
-    emoji: '👩‍🎨',
+    icon: 'user-creative',
   },
   {
     name: 'Daniyar Tolegenov',
     role: 'Campaign Manager',
     bio: 'Performance marketing expert',
-    emoji: '👨‍💻',
+    icon: 'user-manager',
   },
   {
     name: 'Saule Amanova',
     role: 'Analytics Lead',
     bio: 'Data science background',
-    emoji: '👩‍🔬',
+    icon: 'user-analytics',
   },
 ]
 </script>
