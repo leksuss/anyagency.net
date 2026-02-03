@@ -37,7 +37,7 @@
             </li>
             <li class="text-dark-gray text-sm flex items-start gap-2">
               <Icon name="phone" size="sm" class="text-neon-cyan mt-0.5" />
-              <span>+7 (727) 250-XX-XX</span>
+              <span>+7 (727) 250-31-31</span>
             </li>
             <li class="text-dark-gray text-sm flex items-start gap-2">
               <Icon name="location" size="sm" class="text-neon-cyan mt-0.5" />
@@ -66,12 +66,18 @@
           © 2026 AnyAgency. All rights reserved.
         </p>
         <div class="flex gap-6">
-          <a href="#" class="text-dark-gray hover:text-white transition-colors text-sm">
+          <NuxtLink
+            to="/privacy-policy"
+            class="text-dark-gray hover:text-white transition-colors text-sm"
+          >
             Privacy Policy
-          </a>
-          <a href="#" class="text-dark-gray hover:text-white transition-colors text-sm">
+          </NuxtLink>
+          <NuxtLink
+            to="/terms-of-service"
+            class="text-dark-gray hover:text-white transition-colors text-sm"
+          >
             Terms of Service
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -88,9 +94,9 @@ const quickLinks = [
 ]
 
 const socialLinks = [
-  { name: 'Instagram', href: '#', icon: 'instagram' },
-  { name: 'LinkedIn', href: '#', icon: 'linkedin' },
-  { name: 'Telegram', href: '#', icon: 'telegram' },
-  { name: 'TikTok', href: '#', icon: 'tiktok' },
+  { name: 'Telegram', href: 'https://t.me/onyagency', icon: 'telegram' },
+  { name: 'Instagram', href: 'https://www.instagram.com/anyagency/', icon: 'instagram' },
+  { name: 'YouTube', href: 'https://www.youtube.com/@KWSMTeam', icon: 'youtube' },
+  { name: 'TikTok', href: 'https://www.tiktok.com/@anyagency.my', icon: 'tiktok' },
 ]
 </script>

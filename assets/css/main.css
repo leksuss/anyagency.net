@@ -78,6 +78,31 @@
       0 20px 40px rgba(0, 0, 0, 0.4),
       0 0 30px rgba(168, 85, 247, 0.3);
   }
+
+  /* Legal Pages Styles */
+  .legal-content {
+    @apply text-dark-gray leading-relaxed;
+  }
+
+  .legal-content strong {
+    @apply text-white font-semibold;
+  }
+
+  .legal-content em {
+    @apply italic;
+  }
+
+  .legal-content a {
+    @apply text-neon-cyan hover:text-neon-purple transition-colors underline;
+  }
+
+  .legal-content code {
+    @apply px-2 py-1 bg-white/5 rounded text-neon-cyan text-sm font-mono;
+  }
+
+  .legal-content blockquote {
+    @apply border-l-4 border-neon-cyan pl-4 py-2 my-4 bg-white/5 rounded-r;
+  }
 }
 
 @layer utilities {

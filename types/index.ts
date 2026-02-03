@@ -63,3 +63,33 @@ export interface Stat {
   icon: string
   suffix?: string
 }
+
+// Legal page types
+export interface LegalPage {
+  title: string
+  lastUpdated: string // ISO format: "2026-02-03"
+  description: string
+  sections: LegalSection[]
+  metadata: {
+    keywords: string[]
+  }
+}
+
+export interface LegalSection {
+  id: string // для anchor links
+  title: string
+  content: string | string[] // один или несколько параграфов
+  subsections?: LegalSubsection[]
+  list?: LegalList
+}
+
+export interface LegalSubsection {
+  title?: string
+  content: string | string[]
+  list?: LegalList
+}
+
+export interface LegalList {
+  type: 'bullet' | 'numbered'
+  items: (string | { text: string; subitems?: string[] })[]
+}
