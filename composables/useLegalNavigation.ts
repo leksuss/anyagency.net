@@ -13,18 +13,25 @@ export function useLegalNavigation(sectionIds: string[]) {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        // Find the first intersecting entry
-        const intersecting = entries.find(entry => entry.isIntersecting)
+        // Filter only intersecting entries
+        const intersectingEntries = entries.filter(entry => entry.isIntersecting)
 
-        if (intersecting) {
-          activeSection.value = intersecting.target.id
+        if (intersectingEntries.length > 0) {
+          // Find the entry closest to the top of viewport
+          const topEntry = intersectingEntries.reduce((closest, entry) => {
+            const entryTop = entry.boundingClientRect.top
+            const closestTop = closest.boundingClientRect.top
+            return Math.abs(entryTop) < Math.abs(closestTop) ? entry : closest
+          })
+
+          activeSection.value = topEntry.target.id
         }
       },
       {
-        // Trigger when 50% of element is visible
-        threshold: 0.5,
+        // Lower threshold to detect sections earlier
+        threshold: [0, 0.25, 0.5, 0.75, 1],
         // Adjust root margin to account for fixed header
-        rootMargin: '-100px 0px -50% 0px',
+        rootMargin: '-120px 0px -40% 0px',
       }
     )
 

@@ -15,30 +15,14 @@
         <PlatformFilter v-model:selected="selectedPlatform" />
       </div>
 
-      <!-- Featured Bloggers -->
-      <div v-if="filteredFeaturedBloggers.length > 0" class="mb-16">
-        <h3 class="text-2xl font-outfit font-bold text-center mb-8">
-          <span class="text-neon-purple">★</span> Featured Creators
-        </h3>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <BloggerCard
-            v-for="(blogger, index) in filteredFeaturedBloggers"
-            :key="blogger.id"
-            :blogger="blogger"
-            :class="{ 'animate-slide-up': isVisible }"
-            :style="{ animationDelay: `${index * 0.1}s` }"
-          />
-        </div>
-      </div>
-
-      <!-- All Bloggers Grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <!-- Bloggers Grid (4 columns) -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         <BloggerCard
-          v-for="(blogger, index) in filteredRegularBloggers"
+          v-for="(blogger, index) in filteredBloggers"
           :key="blogger.id"
           :blogger="blogger"
-          :class="{ 'animate-fade-in': isVisible }"
-          :style="{ animationDelay: `${(index + filteredFeaturedBloggers.length) * 0.05}s` }"
+          :class="{ 'animate-slide-up': isVisible }"
+          :style="{ animationDelay: `${index * 0.1}s` }"
         />
       </div>
 
@@ -62,18 +46,13 @@ const { isVisible } = useScrollAnimation(sectionRef, { threshold: 0.05 })
 
 const selectedPlatform = ref<Platform>('all')
 
+// Show only featured bloggers
 const filteredBloggers = computed(() => {
+  const featured = bloggers.filter(b => b.featured)
+
   if (selectedPlatform.value === 'all') {
-    return bloggers
+    return featured
   }
-  return bloggers.filter(b => b.platform === selectedPlatform.value)
-})
-
-const filteredFeaturedBloggers = computed(() => {
-  return filteredBloggers.value.filter(b => b.featured)
-})
-
-const filteredRegularBloggers = computed(() => {
-  return filteredBloggers.value.filter(b => !b.featured)
+  return featured.filter(b => b.platform === selectedPlatform.value)
 })
 </script>

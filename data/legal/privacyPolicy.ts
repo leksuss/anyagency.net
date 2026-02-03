@@ -12,17 +12,17 @@ export const privacyPolicy: LegalPage = {
       id: 'company-information',
       title: '1. Company Information',
       content: [
-        'This Privacy Policy describes how Товарищество с ограниченной ответственностью "I-Con" (hereinafter referred to as the "Company," "we," "us," or "our") collects, uses, and protects your personal information when you use the AnyAgency SaaS platform (the "Service").',
+        'This Privacy Policy describes how Tovarishchestvo s ogranichennoy otvetstvennostyu "I-Con" (Limited Liability Partnership "I-Con") (hereinafter referred to as the "Company," "we," "us," or "our") collects, uses, and protects your personal information when you use the AnyAgency SaaS platform (the "Service").',
         'Company Details:',
       ],
       list: {
         type: 'bullet',
         items: [
-          'Legal Name: Товарищество с ограниченной ответственностью "I-Con"',
-          'Registration Number (ИИН): 200840031733',
-          'КАТО: 751910000',
-          'Legal Address: Казахстан, город Алматы, Турксибский район, Микрорайон ЖУЛДЫЗ-1, дом 13, кв. 59, почтовый индекс 050039',
-          'Director: Дресвянский Алексей Сергеевич',
+          'Legal Name: Tovarishchestvo s ogranichennoy otvetstvennostyu "I-Con" (Limited Liability Partnership "I-Con")',
+          'Registration Number (IIN): 200840031733',
+          'KATO: 751910000',
+          'Legal Address: Kazakhstan, Almaty city, Turksibsky district, Mikrorayon ZHULDYZ-1, building 13, apartment 59, postal code 050039',
+          'Director: Dresvyansky Alexey Sergeevich',
           'Contact Email: privacy@anyagency.net',
         ],
       },
@@ -434,7 +434,7 @@ export const privacyPolicy: LegalPage = {
           'Privacy Email: privacy@anyagency.net',
           'Legal Email: legal@anyagency.net',
           'General Inquiries: hello@anyagency.net',
-          'Mailing Address: Казахстан, город Алматы, Турксибский район, Микрорайон ЖУЛДЫЗ-1, дом 13, кв. 59, почтовый индекс 050039',
+          'Mailing Address: Kazakhstan, Almaty city, Turksibsky district, Mikrorayon ZHULDYZ-1, building 13, apartment 59, postal code 050039',
         ],
       },
       subsections: [

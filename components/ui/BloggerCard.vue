@@ -13,12 +13,18 @@
       </div>
     </div>
 
-    <!-- Profile Image Placeholder -->
+    <!-- Profile Image -->
     <div
       class="w-full aspect-square bg-gradient-to-br relative overflow-hidden group/image"
       :class="gradientClasses[blogger.platform]"
     >
-      <div class="absolute inset-0 flex items-center justify-center">
+      <img
+        v-if="blogger.image"
+        :src="blogger.image"
+        :alt="blogger.name"
+        class="w-full h-full object-cover group-hover/image:scale-105 transition-transform duration-500"
+      />
+      <div v-else class="absolute inset-0 flex items-center justify-center">
         <Icon
           :name="platformIcons[blogger.platform]"
           size="2xl"

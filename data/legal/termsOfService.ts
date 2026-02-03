@@ -12,7 +12,7 @@ export const termsOfService: LegalPage = {
       id: 'acceptance-of-terms',
       title: '1. Acceptance of Terms',
       content: [
-        'Welcome to AnyAgency, operated by Товарищество с ограниченной ответственностью "I-Con" (ИИН: 200840031733).',
+        'Welcome to AnyAgency, operated by Tovarishchestvo s ogranichennoy otvetstvennostyu "I-Con" (Limited Liability Partnership "I-Con") (IIN: 200840031733).',
         'By accessing or using the AnyAgency platform (the "Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not use our Service.',
       ],
       subsections: [
@@ -241,7 +241,7 @@ export const termsOfService: LegalPage = {
         {
           title: '5.3 Our Service',
           content: [
-            'The Service, including all software, designs, text, graphics, interfaces, and trademarks, is owned by ТОО "I-Con" or our licensors and is protected by intellectual property laws.',
+            'The Service, including all software, designs, text, graphics, interfaces, and trademarks, is owned by TOO "I-Con" (LLP "I-Con") or our licensors and is protected by intellectual property laws.',
             'You may not:',
           ],
           list: {
@@ -343,7 +343,7 @@ export const termsOfService: LegalPage = {
         {
           title: '7.2 Limitation of Liability',
           content: [
-            'TO THE MAXIMUM EXTENT PERMITTED BY LAW, ТОО "I-Con" AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR:',
+            'TO THE MAXIMUM EXTENT PERMITTED BY LAW, TOO "I-Con" (LLP "I-Con") AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR:',
           ],
           list: {
             type: 'bullet',
@@ -457,7 +457,7 @@ export const termsOfService: LegalPage = {
       subsections: [
         {
           title: '10.1 Entire Agreement',
-          content: 'These Terms, together with our Privacy Policy, constitute the entire agreement between you and ТОО "I-Con" regarding the Service and supersede all prior agreements.',
+          content: 'These Terms, together with our Privacy Policy, constitute the entire agreement between you and TOO "I-Con" (LLP "I-Con") regarding the Service and supersede all prior agreements.',
         },
         {
           title: '10.2 Severability',
@@ -496,10 +496,10 @@ export const termsOfService: LegalPage = {
         items: [
           'Legal Email: legal@anyagency.net',
           'General Inquiries: hello@anyagency.net',
-          'Company: Товарищество с ограниченной ответственностью "I-Con"',
-          'ИИН: 200840031733',
-          'Address: Казахстан, город Алматы, Турксибский район, Микрорайон ЖУЛДЫЗ-1, дом 13, кв. 59, почтовый индекс 050039',
-          'Director: Дресвянский Алексей Сергеевич',
+          'Company: Tovarishchestvo s ogranichennoy otvetstvennostyu "I-Con" (Limited Liability Partnership "I-Con")',
+          'IIN: 200840031733',
+          'Address: Kazakhstan, Almaty city, Turksibsky district, Mikrorayon ZHULDYZ-1, building 13, apartment 59, postal code 050039',
+          'Director: Dresvyansky Alexey Sergeevich',
         ],
       },
       subsections: [

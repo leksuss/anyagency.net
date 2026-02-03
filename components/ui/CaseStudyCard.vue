@@ -1,9 +1,15 @@
 <template>
   <div class="bg-dark-charcoal rounded-3xl overflow-hidden border border-white/10 card-lift">
-    <!-- Image Placeholder -->
-    <div class="w-full h-64 bg-gradient-to-br from-neon-purple/20 to-neon-cyan/20 relative overflow-hidden">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="text-8xl opacity-50">📊</div>
+    <!-- Image -->
+    <div class="w-full h-64 relative overflow-hidden bg-gradient-to-br from-neon-purple/20 to-neon-cyan/20">
+      <img
+        v-if="caseStudy.image"
+        :src="caseStudy.image"
+        :alt="caseStudy.client"
+        class="w-full h-full object-cover"
+      />
+      <div v-else class="absolute inset-0 flex items-center justify-center">
+        <Icon name="chart" size="2xl" class="text-white/50" />
       </div>
       <div class="absolute top-4 left-4 px-4 py-2 bg-black/50 backdrop-blur-sm rounded-full text-sm font-semibold">
         {{ caseStudy.industry }}
@@ -53,7 +59,7 @@
 
       <!-- Duration -->
       <div class="mt-6 text-sm text-dark-gray flex items-center gap-2">
-        <span>⏱️</span>
+        <Icon name="clock" size="sm" class="text-neon-cyan" />
         <span>Campaign duration: <span class="text-white font-semibold">{{ caseStudy.duration }}</span></span>
       </div>
     </div>

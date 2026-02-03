@@ -40,8 +40,8 @@
                 </div>
                 <div>
                   <div class="text-dark-gray text-sm mb-1">Phone</div>
-                  <a href="tel:+77272500000" class="text-lg font-semibold">
-                    +7 (727) 250-XX-XX
+                  <a href="tel:+77272503131" class="text-lg font-semibold">
+                    +7 (727) 250-31-31
                   </a>
                 </div>
               </div>
@@ -119,10 +119,10 @@ const sectionRef = ref<HTMLElement | null>(null)
 const { isVisible } = useScrollAnimation(sectionRef, { threshold: 0.1 })
 
 const socialLinks = [
-  { name: 'Instagram', href: '#', icon: 'instagram' },
-  { name: 'LinkedIn', href: '#', icon: 'linkedin' },
-  { name: 'Telegram', href: '#', icon: 'telegram' },
-  { name: 'TikTok', href: '#', icon: 'tiktok' },
+  { name: 'Telegram', href: 'https://t.me/onyagency', icon: 'telegram' },
+  { name: 'Instagram', href: 'https://www.instagram.com/anyagency/', icon: 'instagram' },
+  { name: 'YouTube', href: 'https://www.youtube.com/@KWSMTeam', icon: 'youtube' },
+  { name: 'TikTok', href: 'https://www.tiktok.com/@anyagency.my', icon: 'tiktok' },
 ]
 
 const openModal = () => {

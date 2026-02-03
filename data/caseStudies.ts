@@ -20,6 +20,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     duration: '2 weeks',
     quote: "AnyAgency exceeded our expectations. The campaign generated massive awareness and drove real sales. We're already planning our next collaboration.",
+    image: '/images/nova_tech.png',
   },
   {
     id: 'urbanwear-awareness',
@@ -40,6 +41,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     duration: '1 month',
     quote: 'The multi-platform approach was genius. We saw engagement from audiences we never reached before. Sales went through the roof!',
+    image: '/images/urban_wear.png',
   },
   {
     id: 'gameforce-installs',
@@ -60,5 +62,6 @@ export const caseStudies: CaseStudy[] = [
     ],
     duration: '3 weeks',
     quote: "Working with AnyAgency transformed our user acquisition. Their gaming influencer network is unmatched, and the results speak for themselves.",
+    image: '/images/game_force.png',
   },
 ]

@@ -157,6 +157,12 @@
       <path d="m21 21-4.35-4.35" />
     </g>
 
+    <!-- Clock Icon -->
+    <g v-else-if="name === 'clock'">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 6v6l4 2" />
+    </g>
+
     <!-- Fallback: Question Mark -->
     <g v-else>
       <circle cx="12" cy="12" r="10" />

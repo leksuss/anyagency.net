@@ -86,11 +86,11 @@
 
 <script setup lang="ts">
 const quickLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Creators', href: '#bloggers' },
-  { label: 'Case Studies', href: '#cases' },
-  { label: 'About Us', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Creators', href: '/#bloggers' },
+  { label: 'Case Studies', href: '/#cases' },
+  { label: 'About Us', href: '/#about' },
+  { label: 'Contact', href: '/#contact' },
 ]
 
 const socialLinks = [

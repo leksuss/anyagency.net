@@ -6,8 +6,9 @@
     <nav class="section-container py-6">
       <div class="flex items-center justify-between">
         <!-- Logo -->
-        <a href="#hero" class="text-2xl font-outfit font-black text-gradient hover:scale-105 transition-transform">
-          AnyAgency
+        <a href="/#hero" class="flex items-center gap-3 hover:scale-105 transition-transform">
+          <AppLogo />
+          <span class="text-2xl font-outfit font-black text-gradient">AnyAgency</span>
         </a>
 
         <!-- Desktop Navigation -->
@@ -62,16 +63,18 @@
 </template>
 
 <script setup lang="ts">
+import AppLogo from '~/components/ui/AppLogo.vue'
+
 const emit = defineEmits<{
   openModal: []
 }>()
 
 const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Creators', href: '#bloggers' },
-  { label: 'Cases', href: '#cases' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Creators', href: '/#bloggers' },
+  { label: 'Cases', href: '/#cases' },
+  { label: 'About', href: '/#about' },
+  { label: 'Contact', href: '/#contact' },
 ]
 
 const scrolled = ref(false)
