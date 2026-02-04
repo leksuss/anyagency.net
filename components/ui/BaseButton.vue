@@ -1,24 +1,49 @@
 <template>
-  <button
+  <component
+    :is="href ? 'a' : 'button'"
+    :href="href"
     :class="[
-      'px-8 py-4 rounded-lg font-outfit font-bold text-lg transition-all duration-300',
+      'inline-block text-center font-outfit font-bold transition-all duration-300 rounded-lg',
       'hover:scale-105 active:scale-95',
+      sizeClasses,
       variant === 'primary' && 'bg-gradient-to-r from-neon-purple to-neon-purple-dark text-white neon-glow-hover',
       variant === 'secondary' && 'border-2 border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-dark-bg',
       variant === 'ghost' && 'text-white hover:text-neon-purple',
     ]"
-    @click="$emit('click', $event)"
+    @click="handleClick"
   >
     <slot />
-  </button>
+  </component>
 </template>
 
 <script setup lang="ts">
-defineProps<{
+interface Props {
   variant?: 'primary' | 'secondary' | 'ghost'
-}>()
+  size?: 'sm' | 'md' | 'lg'
+  href?: string
+}
 
-defineEmits<{
+const props = withDefaults(defineProps<Props>(), {
+  variant: 'primary',
+  size: 'md'
+})
+
+const emit = defineEmits<{
   click: [event: MouseEvent]
 }>()
+
+const sizeClasses = computed(() => {
+  const sizes = {
+    sm: 'px-4 py-2 text-sm',
+    md: 'px-6 py-3 text-base',
+    lg: 'px-8 py-4 text-lg',
+  }
+  return sizes[props.size]
+})
+
+const handleClick = (event: MouseEvent) => {
+  if (!props.href) {
+    emit('click', event)
+  }
+}
 </script>

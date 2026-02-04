@@ -163,6 +163,16 @@
       <path d="M12 6v6l4 2" />
     </g>
 
+    <!-- Check Icon -->
+    <g v-else-if="name === 'check'">
+      <path d="M20 6L9 17l-5-5" />
+    </g>
+
+    <!-- Close/X Icon -->
+    <g v-else-if="name === 'close'">
+      <path d="M18 6L6 18M6 6l12 12" />
+    </g>
+
     <!-- Fallback: Question Mark -->
     <g v-else>
       <circle cx="12" cy="12" r="10" />
