@@ -52,13 +52,18 @@
           <div
             v-for="(member, index) in team"
             :key="member.name"
-            class="text-center"
+            class="text-center group"
             :class="{ 'animate-fade-in': isVisible }"
             :style="{ animationDelay: `${(index + 4) * 0.1}s` }"
           >
-            <!-- Profile Image Placeholder -->
-            <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-neon-purple/30 to-neon-cyan/30 flex items-center justify-center">
-              <Icon :name="member.icon" size="2xl" class="text-white" />
+            <!-- Profile Image -->
+            <div class="w-32 h-32 mx-auto mb-4 relative">
+              <img
+                :src="`/images/employees/${member.photo}`"
+                :alt="member.name"
+                class="w-full h-full rounded-full object-cover border-4 border-white/10 group-hover:border-neon-purple/50 transition-all duration-300 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 rounded-full bg-gradient-to-br from-neon-purple/20 to-neon-cyan/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
 
             <!-- Name & Role -->
@@ -104,25 +109,25 @@ const team = [
     name: 'Amir Bekzhan',
     role: 'CEO & Founder',
     bio: '10+ years in digital marketing',
-    icon: 'user-ceo',
+    photo: 'Amir.webp',
   },
   {
     name: 'Alina Nurzhanova',
     role: 'Creative Director',
     bio: 'Former content creator turned strategist',
-    icon: 'user-creative',
+    photo: 'Alina.webp',
   },
   {
     name: 'Daniyar Tolegenov',
     role: 'Campaign Manager',
     bio: 'Performance marketing expert',
-    icon: 'user-manager',
+    photo: 'Daniyar.webp',
   },
   {
     name: 'Saule Amanova',
     role: 'Analytics Lead',
     bio: 'Data science background',
-    icon: 'user-analytics',
+    photo: 'Saule.webp',
   },
 ]
 </script>
