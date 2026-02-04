@@ -423,8 +423,82 @@ export const privacyPolicy: LegalPage = {
       ],
     },
     {
+      id: 'international-data-protection',
+      title: '11. International Data Protection Compliance',
+      content: [
+        'We are committed to complying with applicable data protection laws and regulations worldwide.',
+      ],
+      subsections: [
+        {
+          title: '11.1 GDPR Compliance (European Users)',
+          content: [
+            'If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, your personal data is protected under the General Data Protection Regulation (GDPR). We provide you with the rights described in Section 6 of this Privacy Policy, including:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Right to access your personal data',
+              'Right to rectification of inaccurate data',
+              'Right to erasure ("right to be forgotten")',
+              'Right to restrict processing',
+              'Right to data portability',
+              'Right to object to processing',
+              'Right to withdraw consent at any time',
+              'Right to lodge a complaint with your local supervisory authority',
+            ],
+          },
+        },
+        {
+          title: '11.2 Legal Basis for Processing (GDPR)',
+          content: 'We process your personal data under the following legal bases:',
+          list: {
+            type: 'bullet',
+            items: [
+              'Consent: When you connect your TikTok account and explicitly authorize us to access and use your data',
+              'Contract Performance: To provide the Service you have requested',
+              'Legitimate Interests: For service improvement, security, and fraud prevention',
+              'Legal Obligations: To comply with applicable laws and regulations',
+            ],
+          },
+        },
+        {
+          title: '11.3 CCPA Compliance (California Users)',
+          content: [
+            'If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA):',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Right to Know: Request information about personal data we collect, use, and disclose',
+              'Right to Delete: Request deletion of your personal data (subject to exceptions)',
+              'Right to Opt-Out: We do not sell your personal information',
+              'Right to Non-Discrimination: We will not discriminate against you for exercising your rights',
+            ],
+          },
+        },
+        {
+          title: '11.4 Data Transfers',
+          content: [
+            'Your data may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place for international data transfers, including:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Standard Contractual Clauses (SCCs) approved by the European Commission',
+              'Adequacy decisions by relevant authorities',
+              'Other legally compliant transfer mechanisms',
+            ],
+          },
+        },
+        {
+          title: '11.5 Kazakhstan Data Protection Laws',
+          content: 'As a company registered in Kazakhstan, we comply with the Law of the Republic of Kazakhstan "On Personal Data and its Protection" (No. 94-V, dated May 21, 2013) and related regulations.',
+        },
+      ],
+    },
+    {
       id: 'contact-information',
-      title: '11. Contact Information',
+      title: '12. Contact Information',
       content: [
         'If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:',
       ],
@@ -445,19 +519,19 @@ export const privacyPolicy: LegalPage = {
     },
     {
       id: 'tiktok-integration',
-      title: '12. TikTok Integration',
+      title: '13. TikTok Integration',
       content: [
         'This section provides specific information about how we integrate with TikTok and use your TikTok data.',
       ],
       subsections: [
         {
-          title: '12.1 Purpose of TikTok Integration',
+          title: '13.1 Purpose of TikTok Integration',
           content: [
             'We use TikTok\'s API solely for the purpose of enabling you to post video content to your TikTok account through our platform. This is the core functionality of our Service.',
           ],
         },
         {
-          title: '12.2 What We Do With TikTok Data',
+          title: '13.2 What We Do With TikTok Data',
           content: 'We use your TikTok data exclusively for:',
           list: {
             type: 'bullet',
@@ -470,7 +544,7 @@ export const privacyPolicy: LegalPage = {
           },
         },
         {
-          title: '12.3 What We Do NOT Do',
+          title: '13.3 What We Do NOT Do',
           content: 'We explicitly do not:',
           list: {
             type: 'bullet',
@@ -486,7 +560,7 @@ export const privacyPolicy: LegalPage = {
           },
         },
         {
-          title: '12.4 TikTok Permissions',
+          title: '13.4 TikTok Permissions',
           content: [
             'When you connect your TikTok account, you grant us the following TikTok permissions:',
           ],
@@ -499,7 +573,7 @@ export const privacyPolicy: LegalPage = {
           },
         },
         {
-          title: '12.5 Revoking Access',
+          title: '13.5 Revoking Access',
           content: [
             'You can revoke our access to your TikTok account at any time by:',
           ],
@@ -513,22 +587,27 @@ export const privacyPolicy: LegalPage = {
           },
         },
         {
-          title: '12.6 TikTok Terms',
+          title: '13.6 TikTok Terms',
           content: [
-            'Your use of TikTok through our Service is also governed by:',
+            'Your use of TikTok through our Service is also governed by TikTok\'s own policies and terms:',
           ],
           list: {
             type: 'bullet',
             items: [
-              'TikTok\'s Terms of Service',
-              'TikTok\'s Privacy Policy',
-              'TikTok\'s Community Guidelines',
+              'TikTok\'s Terms of Service (https://www.tiktok.com/legal/page/row/terms-of-service/en)',
+              'TikTok\'s Privacy Policy (https://www.tiktok.com/legal/page/row/privacy-policy/en)',
+              'TikTok\'s Community Guidelines (https://www.tiktok.com/community-guidelines)',
+              'TikTok Developer Terms (https://developers.tiktok.com/doc/developer-terms-of-service)',
+              'TikTok API Terms of Service (https://developers.tiktok.com/doc/terms-of-service)',
               'TikTok\'s Music Usage Confirmation',
             ],
           },
         },
         {
-          title: '12.7 TikTok API Compliance',
+          content: 'We recommend reviewing these TikTok policies to understand how TikTok handles your data and what rules apply to content posted on their platform.',
+        },
+        {
+          title: '13.7 TikTok API Compliance',
           content: 'We comply with all TikTok Developer Terms and TikTok API policies. We are committed to using TikTok data responsibly and transparently in accordance with TikTok\'s requirements and user expectations.',
         },
       ],

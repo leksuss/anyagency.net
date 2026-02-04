@@ -157,18 +157,25 @@ export const termsOfService: LegalPage = {
       subsections: [
         {
           title: '4.1 TikTok Terms Compliance',
-          content: 'By using our Service, you agree to comply with:',
+          content: [
+            'By using our Service, you agree to comply with all TikTok policies and guidelines. Your use of TikTok through our platform is governed by:',
+          ],
           list: {
             type: 'bullet',
             items: [
-              'TikTok\'s Terms of Service',
-              'TikTok\'s Community Guidelines',
-              'TikTok\'s Privacy Policy',
+              'TikTok\'s Terms of Service (https://www.tiktok.com/legal/page/row/terms-of-service/en)',
+              'TikTok\'s Community Guidelines (https://www.tiktok.com/community-guidelines)',
+              'TikTok\'s Privacy Policy (https://www.tiktok.com/legal/page/row/privacy-policy/en)',
+              'TikTok Developer Terms (https://developers.tiktok.com/doc/developer-terms-of-service)',
+              'TikTok API Terms of Service (https://developers.tiktok.com/doc/terms-of-service)',
               'TikTok\'s Music Usage Confirmation',
               'TikTok\'s Copyright Policy',
-              'All applicable TikTok policies and guidelines',
             ],
           },
+        },
+        {
+          title: '4.1.1 Third-Party Terms',
+          content: 'We are not responsible for TikTok\'s terms and policies. It is your responsibility to review and comply with all TikTok requirements. If TikTok\'s terms conflict with these Terms, TikTok\'s terms govern your use of TikTok, but these Terms govern your use of our Service.',
         },
         {
           title: '4.2 Content Requirements',
