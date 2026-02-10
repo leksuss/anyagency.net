@@ -84,6 +84,37 @@ export const privacyPolicy: LegalPage = {
             ],
           },
         },
+        {
+          title: '2.5 Creator Network Data (Public Information)',
+          content: [
+            'For Creators featured in our network showcase on anyagency.net, we collect and display:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Creator name or stage name (as agreed in partnership agreement)',
+              'Profile pictures from public social media profiles',
+              'Publicly available statistics (follower counts, average views)',
+              'Platform affiliations (TikTok, YouTube, Telegram, VK, Instagram)',
+              'Content categories',
+              'Links to public social media profiles',
+            ],
+          },
+        },
+        {
+          title: '2.6 Brand Client Data',
+          content: 'For business clients using our agency services, we collect:',
+          list: {
+            type: 'bullet',
+            items: [
+              'Company name and registration details',
+              'Contact person information (name, email, phone)',
+              'Campaign requirements and preferences',
+              'Budget and payment information',
+              'Campaign performance data',
+            ],
+          },
+        },
       ],
     },
     {
@@ -162,6 +193,24 @@ export const privacyPolicy: LegalPage = {
               'Protecting our legal rights',
             ],
           },
+          {
+            text: 'Creator Network Management: To operate our influencer network',
+            subitems: [
+              'Showcasing our Creators to potential brand clients',
+              'Matching Creators with relevant campaigns',
+              'Managing Creator partnerships and agreements',
+              'Providing platform access to network Creators',
+            ],
+          },
+          {
+            text: 'Multi-Platform Operations: To support integrations beyond TikTok',
+            subitems: [
+              'Managing YouTube content publishing (via YouTube Data API)',
+              'Telegram channel management (via Telegram Bot API)',
+              'VKontakte content posting (via VK API)',
+              'Instagram analytics integration',
+            ],
+          },
         ],
       },
     },
@@ -207,6 +256,20 @@ export const privacyPolicy: LegalPage = {
           content: 'In the event of a merger, acquisition, or sale of assets, your personal information may be transferred to the acquiring entity. We will notify you via email and/or prominent notice on our Service before your information becomes subject to a different privacy policy.',
         },
         {
+          title: '5.5 Public Display of Creator Information',
+          content: [
+            'Creator information is publicly displayed on anyagency.net for the following purposes:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Showcasing our Creator network to potential brand clients',
+              'Demonstrating the reach and diversity of our influencer partnerships',
+              'Marketing our agency services',
+            ],
+          },
+        },
+        {
           content: 'We do not sell, rent, or trade your personal information with third parties for their marketing purposes.',
         },
       ],
@@ -238,6 +301,12 @@ export const privacyPolicy: LegalPage = {
           },
           {
             text: 'Right to Lodge a Complaint: You can file a complaint with relevant data protection authorities',
+          },
+          {
+            text: 'Right to Opt-Out of Public Showcase: Creators can request removal from public display on anyagency.net',
+          },
+          {
+            text: 'Right to Update Showcase Information: Creators can request corrections to publicly displayed data',
           },
         ],
       },
@@ -494,6 +563,22 @@ export const privacyPolicy: LegalPage = {
           title: '11.5 Kazakhstan Data Protection Laws',
           content: 'As a company registered in Kazakhstan, we comply with the Law of the Republic of Kazakhstan "On Personal Data and its Protection" (No. 94-V, dated May 21, 2013) and related regulations.',
         },
+        {
+          title: '11.6 Third-Party Data Protection (Creator Data)',
+          content: [
+            'When we collect and display information about Creators who are third parties (not direct users of our platform):',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'We collect only publicly available information or data provided with explicit consent',
+              'We comply with GDPR requirements for processing third-party personal data',
+              'We have legitimate interest basis (business operation and marketing)',
+              'We honor data subject rights (access, rectification, erasure)',
+              'Creators can contact us at privacy@anyagency.net to exercise their rights',
+            ],
+          },
+        },
       ],
     },
     {
@@ -518,20 +603,26 @@ export const privacyPolicy: LegalPage = {
       ],
     },
     {
-      id: 'tiktok-integration',
-      title: '13. TikTok Integration',
+      id: 'platform-integrations',
+      title: '13. Platform Integrations',
       content: [
-        'This section provides specific information about how we integrate with TikTok and use your TikTok data.',
+        'Our Creator Platform integrates with multiple social media platforms. This section describes how we handle data from each integration.',
       ],
       subsections: [
         {
-          title: '13.1 Purpose of TikTok Integration',
+          title: '13.1 TikTok Integration',
+          content: [
+            'This section provides specific information about how we integrate with TikTok and use your TikTok data.',
+          ],
+          subsections: [
+            {
+              title: '13.1.1 Purpose of TikTok Integration',
           content: [
             'We use TikTok\'s API solely for the purpose of enabling you to post video content to your TikTok account through our platform. This is the core functionality of our Service.',
           ],
         },
-        {
-          title: '13.2 What We Do With TikTok Data',
+            {
+              title: '13.1.2 What We Do With TikTok Data',
           content: 'We use your TikTok data exclusively for:',
           list: {
             type: 'bullet',
@@ -543,8 +634,8 @@ export const privacyPolicy: LegalPage = {
             ],
           },
         },
-        {
-          title: '13.3 What We Do NOT Do',
+            {
+              title: '13.1.3 What We Do NOT Do',
           content: 'We explicitly do not:',
           list: {
             type: 'bullet',
@@ -559,8 +650,8 @@ export const privacyPolicy: LegalPage = {
             ],
           },
         },
-        {
-          title: '13.4 TikTok Permissions',
+            {
+              title: '13.1.4 TikTok Permissions',
           content: [
             'When you connect your TikTok account, you grant us the following TikTok permissions:',
           ],
@@ -572,8 +663,8 @@ export const privacyPolicy: LegalPage = {
             ],
           },
         },
-        {
-          title: '13.5 Revoking Access',
+            {
+              title: '13.1.5 Revoking Access',
           content: [
             'You can revoke our access to your TikTok account at any time by:',
           ],
@@ -586,8 +677,8 @@ export const privacyPolicy: LegalPage = {
             ],
           },
         },
-        {
-          title: '13.6 TikTok Terms',
+            {
+              title: '13.1.6 TikTok Terms',
           content: [
             'Your use of TikTok through our Service is also governed by TikTok\'s own policies and terms:',
           ],
@@ -603,12 +694,75 @@ export const privacyPolicy: LegalPage = {
             ],
           },
         },
-        {
-          content: 'We recommend reviewing these TikTok policies to understand how TikTok handles your data and what rules apply to content posted on their platform.',
+              {
+                content: 'We recommend reviewing these TikTok policies to understand how TikTok handles your data and what rules apply to content posted on their platform.',
+              },
+            {
+              title: '13.1.7 TikTok API Compliance',
+          content: 'We comply with all TikTok Developer Terms and TikTok API policies. We are committed to using TikTok data responsibly and transparently in accordance with TikTok\'s requirements and user expectations.',
+        },
+          ],
         },
         {
-          title: '13.7 TikTok API Compliance',
-          content: 'We comply with all TikTok Developer Terms and TikTok API policies. We are committed to using TikTok data responsibly and transparently in accordance with TikTok\'s requirements and user expectations.',
+          title: '13.2 YouTube Integration',
+          content: [
+            'We integrate with YouTube via YouTube Data API v3 for Creators who connect their YouTube channels:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Purpose: Video upload and publishing to Creator YouTube channels',
+              'Permissions requested: youtube.upload (video uploading)',
+              'What we access: Channel information, video metadata',
+              'What we do: Upload videos when Creators explicitly request it',
+              'YouTube Terms: https://www.youtube.com/t/terms',
+            ],
+          },
+        },
+        {
+          title: '13.3 Telegram Integration',
+          content: [
+            'We integrate with Telegram for Creators managing Telegram channels:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Purpose: Content posting to Telegram channels',
+              'Integration method: Telegram Bot API',
+              'What we access: Channel information, posting permissions',
+              'Telegram Terms: https://telegram.org/tos',
+            ],
+          },
+        },
+        {
+          title: '13.4 VKontakte (VK) Integration',
+          content: [
+            'We integrate with VKontakte for Creators with VK profiles:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Purpose: Content posting to VK profiles and communities',
+              'Integration method: VK API',
+              'What we access: Profile information, posting permissions',
+              'VK Terms: https://vk.com/terms',
+            ],
+          },
+        },
+        {
+          title: '13.5 Instagram Integration',
+          content: [
+            'We display Instagram in our case studies and Creator showcases:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Purpose: Showcasing Creator reach and campaign results',
+              'Data collected: Publicly available statistics and profile information',
+              'No API integration for content posting (display purposes only)',
+              'Instagram Terms: https://help.instagram.com/581066165581870',
+            ],
+          },
         },
       ],
     },

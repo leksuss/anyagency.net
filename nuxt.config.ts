@@ -34,6 +34,12 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'AnyAgency - Multi-Platform Influencer Marketing',
+      htmlAttrs: {
+        style: 'background: linear-gradient(180deg, #0A0A0A 0%, #1A1A1A 100%);'
+      },
+      bodyAttrs: {
+        style: 'background: linear-gradient(180deg, #0A0A0A 0%, #1A1A1A 100%); margin: 0; padding: 0;'
+      },
       meta: [
         {
           name: 'description',

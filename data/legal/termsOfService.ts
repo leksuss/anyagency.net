@@ -21,16 +21,23 @@ export const termsOfService: LegalPage = {
           content: 'By creating an account, connecting your TikTok account, or using any feature of our Service, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.',
         },
         {
-          title: '1.2 Eligibility',
-          content: 'To use our Service, you must:',
+          title: '1.2 Eligibility and User Types',
+          content: [
+            'Our Service is available to two types of users:',
+            '',
+            'A. Content Creators: Individuals who use our platform to manage and publish content to their social media accounts, including TikTok.',
+            '',
+            'B. Brand Clients: Businesses and organizations who engage our agency services for influencer marketing campaigns.',
+          ],
           list: {
             type: 'bullet',
             items: [
               'Be at least 18 years old or the age of majority in your jurisdiction',
               'Have the legal capacity to enter into binding contracts',
               'Not be prohibited from using the Service under applicable laws',
-              'Have a valid TikTok account in good standing',
-              'Comply with TikTok\'s Terms of Service and Community Guidelines',
+              'For Content Creators: Have valid social media accounts (TikTok, YouTube, etc.) in good standing',
+              'For Content Creators: Comply with all applicable platform Terms of Service and Community Guidelines',
+              'For Brand Clients: Be a legitimate business entity with proper registration',
             ],
           },
         },
@@ -44,25 +51,56 @@ export const termsOfService: LegalPage = {
       id: 'service-description',
       title: '2. Description of Service',
       content: [
-        'AnyAgency is a SaaS (Software as a Service) platform that enables you to post video content to your TikTok account through our interface.',
+        'AnyAgency provides two interconnected services:',
       ],
       subsections: [
         {
-          title: '2.1 Core Functionality',
-          content: 'Our Service provides:',
+          title: '2.1 Influencer Marketing Agency Services (for Brand Clients)',
+          content: 'We provide professional influencer marketing services to brands and businesses:',
           list: {
             type: 'bullet',
             items: [
-              'TikTok account connection via OAuth 2.0',
-              'Video upload and processing',
-              'Video publishing to your TikTok account',
-              'Content management and scheduling',
-              'Publishing analytics and reporting',
+              'Campaign strategy and planning',
+              'Creator matching and selection from our network',
+              'Campaign management and coordination',
+              'Performance tracking and reporting',
+              'Multi-platform campaign execution (TikTok, YouTube, Telegram, VK, Instagram)',
             ],
           },
         },
         {
-          title: '2.2 Service Availability',
+          title: '2.2 Creator Platform Services (for Content Creators)',
+          content: 'We provide a technology platform to our network creators for content management and publishing:',
+          list: {
+            type: 'bullet',
+            items: [
+              'Multi-platform account connection via OAuth 2.0 (TikTok, YouTube, etc.)',
+              'Video upload, processing, and storage',
+              'Content publishing to connected social media accounts',
+              'Content scheduling and automation',
+              'Cross-platform analytics dashboard',
+              'Campaign collaboration tools',
+            ],
+          },
+        },
+        {
+          title: '2.3 Platform Integration',
+          content: [
+            'Our Creator Platform integrates with the following social media platforms:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'TikTok (via TikTok API for content posting)',
+              'YouTube (via YouTube Data API)',
+              'Telegram (via Telegram Bot API)',
+              'VKontakte (via VK API)',
+              'Instagram (for analytics and insights)',
+            ],
+          },
+        },
+        {
+          title: '2.4 Service Availability',
           content: [
             'We strive to maintain high availability of our Service, but we do not guarantee uninterrupted access. The Service may be temporarily unavailable due to:',
           ],
@@ -71,14 +109,14 @@ export const termsOfService: LegalPage = {
             items: [
               'Scheduled maintenance',
               'Technical issues or system failures',
-              'TikTok API changes or downtime',
+              'Platform API changes or downtime (TikTok, YouTube, etc.)',
               'Force majeure events',
               'Security incidents requiring immediate action',
             ],
           },
         },
         {
-          title: '2.3 Service Modifications',
+          title: '2.5 Service Modifications',
           content: 'We reserve the right to modify, suspend, or discontinue any aspect of the Service at any time, with or without notice. We are not liable for any modification, suspension, or discontinuation of the Service.',
         },
       ],
@@ -269,8 +307,54 @@ export const termsOfService: LegalPage = {
       ],
     },
     {
+      id: 'creator-data',
+      title: '6. Creator Network and Public Showcase',
+      subsections: [
+        {
+          title: '6.1 Creator Network Participation',
+          content: [
+            'Content Creators in our network agree to be featured in our public showcase on anyagency.net for marketing purposes. By joining our network, Creators grant us permission to display:',
+          ],
+          list: {
+            type: 'bullet',
+            items: [
+              'Creator name or pseudonym',
+              'Profile picture or avatar',
+              'Public statistics (follower count, average views) from public social media profiles',
+              'Platform affiliations (TikTok, YouTube, Telegram, VK)',
+              'Content category or niche',
+            ],
+          },
+        },
+        {
+          title: '6.2 Data Source and Consent',
+          content: 'All Creator data displayed on our website is either:',
+          list: {
+            type: 'bullet',
+            items: [
+              'Provided directly by Creators who signed partnership agreements with our agency',
+              'Collected from publicly available social media profiles with Creator consent',
+              'Updated periodically based on publicly available information',
+            ],
+          },
+        },
+        {
+          title: '6.3 Creator Rights',
+          content: 'Creators in our network may request:',
+          list: {
+            type: 'bullet',
+            items: [
+              'Removal from public showcase',
+              'Update of displayed information',
+              'Termination of partnership agreement',
+            ],
+          },
+        },
+      ],
+    },
+    {
       id: 'prohibited-use',
-      title: '6. Prohibited Uses and Conduct',
+      title: '7. Prohibited Uses and Conduct',
       content: [
         'You agree not to use the Service for any unlawful purpose or in any way that violates these Terms.',
       ],
@@ -330,10 +414,10 @@ export const termsOfService: LegalPage = {
     },
     {
       id: 'limitation-of-liability',
-      title: '7. Disclaimer of Warranties and Limitation of Liability',
+      title: '8. Disclaimer of Warranties and Limitation of Liability',
       subsections: [
         {
-          title: '7.1 Disclaimer of Warranties',
+          title: '8.1 Disclaimer of Warranties',
           content: [
             'THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:',
           ],
@@ -348,7 +432,7 @@ export const termsOfService: LegalPage = {
           },
         },
         {
-          title: '7.2 Limitation of Liability',
+          title: '8.2 Limitation of Liability',
           content: [
             'TO THE MAXIMUM EXTENT PERMITTED BY LAW, TOO "I-Con" (LLP "I-Con") AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR:',
           ],
@@ -365,7 +449,7 @@ export const termsOfService: LegalPage = {
           },
         },
         {
-          title: '7.3 Third-Party Services',
+          title: '8.3 Third-Party Services',
           content: 'We are not responsible for:',
           list: {
             type: 'bullet',
@@ -378,21 +462,21 @@ export const termsOfService: LegalPage = {
           },
         },
         {
-          title: '7.4 No Guarantee of Results',
+          title: '8.4 No Guarantee of Results',
           content: 'We do not guarantee any specific results from using the Service, including views, engagement, or success on TikTok. Your success depends on many factors outside our control.',
         },
       ],
     },
     {
       id: 'service-termination',
-      title: '8. Termination',
+      title: '9. Termination',
       subsections: [
         {
-          title: '8.1 Termination by You',
+          title: '9.1 Termination by You',
           content: 'You may terminate your account at any time by following the account deletion process in your account settings.',
         },
         {
-          title: '8.2 Termination by Us',
+          title: '9.2 Termination by Us',
           content: 'We may suspend or terminate your access to the Service immediately, without prior notice, if:',
           list: {
             type: 'bullet',
@@ -407,7 +491,7 @@ export const termsOfService: LegalPage = {
           },
         },
         {
-          title: '8.3 Effect of Termination',
+          title: '9.3 Effect of Termination',
           content: 'Upon termination:',
           list: {
             type: 'bullet',
@@ -421,25 +505,25 @@ export const termsOfService: LegalPage = {
           },
         },
         {
-          title: '8.4 Data Retrieval',
+          title: '9.4 Data Retrieval',
           content: 'After termination, you may request a copy of your data within 30 days. After this period, your data may be permanently deleted.',
         },
       ],
     },
     {
       id: 'governing-law',
-      title: '9. Governing Law and Dispute Resolution',
+      title: '10. Governing Law and Dispute Resolution',
       subsections: [
         {
-          title: '9.1 Governing Law',
+          title: '10.1 Governing Law',
           content: 'These Terms are governed by and construed in accordance with the laws of the Republic of Kazakhstan, without regard to its conflict of law provisions.',
         },
         {
-          title: '9.2 Jurisdiction',
+          title: '10.2 Jurisdiction',
           content: 'You agree that any legal action or proceeding arising out of or related to these Terms or the Service shall be instituted exclusively in the courts of Almaty, Kazakhstan, and you consent to the jurisdiction of such courts.',
         },
         {
-          title: '9.3 Dispute Resolution',
+          title: '10.3 Dispute Resolution',
           content: [
             'Before filing any legal action, you agree to attempt to resolve disputes through:',
           ],
@@ -453,48 +537,48 @@ export const termsOfService: LegalPage = {
           },
         },
         {
-          title: '9.4 Exceptions',
+          title: '10.4 Exceptions',
           content: 'Nothing in this section prevents either party from seeking injunctive relief in court for intellectual property infringement or to prevent irreparable harm.',
         },
       ],
     },
     {
       id: 'general-provisions',
-      title: '10. General Provisions',
+      title: '11. General Provisions',
       subsections: [
         {
-          title: '10.1 Entire Agreement',
+          title: '11.1 Entire Agreement',
           content: 'These Terms, together with our Privacy Policy, constitute the entire agreement between you and TOO "I-Con" (LLP "I-Con") regarding the Service and supersede all prior agreements.',
         },
         {
-          title: '10.2 Severability',
+          title: '11.2 Severability',
           content: 'If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.',
         },
         {
-          title: '10.3 Waiver',
+          title: '11.3 Waiver',
           content: 'Our failure to enforce any right or provision of these Terms will not be deemed a waiver of such right or provision.',
         },
         {
-          title: '10.4 Assignment',
+          title: '11.4 Assignment',
           content: 'You may not assign or transfer these Terms without our written consent. We may assign these Terms without restriction.',
         },
         {
-          title: '10.5 No Agency',
+          title: '11.5 No Agency',
           content: 'Nothing in these Terms creates any agency, partnership, joint venture, or employment relationship between you and us.',
         },
         {
-          title: '10.6 Force Majeure',
+          title: '11.6 Force Majeure',
           content: 'We are not liable for any delay or failure to perform resulting from causes beyond our reasonable control, including natural disasters, war, terrorism, labor disputes, or government actions.',
         },
         {
-          title: '10.7 Language',
+          title: '11.7 Language',
           content: 'These Terms are written in English. If translated into other languages, the English version prevails in case of any conflict.',
         },
       ],
     },
     {
       id: 'contact-information',
-      title: '11. Contact Information',
+      title: '12. Contact Information',
       content: [
         'If you have questions about these Terms of Service, please contact us:',
       ],

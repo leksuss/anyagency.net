@@ -6,9 +6,13 @@
     <nav class="section-container py-6">
       <div class="flex items-center justify-between">
         <!-- Logo -->
-        <a href="/#hero" class="flex items-center gap-3 hover:scale-105 transition-transform">
-          <AppLogo />
-          <span class="text-2xl font-outfit font-black text-gradient">AnyAgency</span>
+        <a
+          href="/#hero"
+          class="flex items-center gap-3 hover:scale-105 transition-transform"
+          style="display: flex; align-items: center; gap: 0.75rem; max-width: 200px;"
+        >
+          <AppLogo style="width: 36px; height: 36px; flex-shrink: 0;" />
+          <span class="text-2xl font-outfit font-black text-gradient" style="font-size: 1.5rem; font-weight: 900;">AnyAgency</span>
         </a>
 
         <!-- Desktop Navigation -->
@@ -23,8 +27,15 @@
           </a>
         </div>
 
-        <!-- CTA Button -->
-        <div class="hidden md:block">
+        <!-- CTA Buttons -->
+        <div class="hidden md:flex items-center gap-4">
+          <a
+            href="https://app.anyagency.net"
+            target="_blank"
+            class="px-6 py-3 text-sm font-semibold text-white border border-white/20 rounded-lg hover:bg-white/10 transition-colors"
+          >
+            Join as Creator
+          </a>
           <BaseButton variant="primary" @click="openModal">
             Start Campaign
           </BaseButton>
@@ -53,6 +64,14 @@
           >
             {{ link.label }}
           </a>
+          <a
+            href="https://app.anyagency.net"
+            target="_blank"
+            class="block w-full px-6 py-3 text-center text-sm font-semibold text-white border border-white/20 rounded-lg hover:bg-white/10 transition-colors"
+            @click="closeMobileMenu"
+          >
+            Join as Creator
+          </a>
           <BaseButton variant="primary" class="w-full" @click="openModalAndCloseMobileMenu">
             Start Campaign
           </BaseButton>
@@ -74,6 +93,8 @@ const navLinks = [
   { label: 'Creators', href: '/#bloggers' },
   { label: 'Cases', href: '/#cases' },
   { label: 'About', href: '/#about' },
+  { label: 'Privacy', href: '/privacy-policy' },
+  { label: 'Terms', href: '/terms-of-service' },
   { label: 'Contact', href: '/#contact' },
 ]
 

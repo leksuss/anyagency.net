@@ -1,7 +1,10 @@
 <template>
   <svg
     viewBox="0 0 48 48"
+    width="36"
+    height="36"
     class="logo-svg"
+    style="width: 36px; height: 36px; max-width: 36px; max-height: 36px; display: block;"
     xmlns="http://www.w3.org/2000/svg"
   >
     <defs>
@@ -38,7 +41,9 @@
 <style scoped>
 .logo-svg {
   height: 36px;
-  width: auto;
+  width: 36px;
+  max-width: 100%;
+  max-height: 100%;
   transition: all 0.3s ease;
 }
 
@@ -49,7 +54,15 @@
 
 @media (max-width: 768px) {
   .logo-svg {
-    height: 32px;
+    height: 28px;
+    width: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-svg {
+    height: 24px;
+    width: 24px;
   }
 }
 </style>
