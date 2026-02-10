@@ -1,5 +1,5 @@
 <template>
-  <section id="platform" class="py-24 relative">
+  <section id="platform" class="py-12 relative">
     <div class="absolute inset-0 bg-gradient-to-b from-dark-charcoal to-dark-bg"></div>
 
     <div class="relative z-10 section-container">
@@ -63,13 +63,15 @@
             </div>
           </div>
 
-          <a
-            href="https://app.anyagency.net"
-            target="_blank"
-            class="inline-block px-8 py-4 bg-gradient-to-r from-neon-purple to-neon-purple-dark text-white font-semibold rounded-lg hover:scale-105 transition-all duration-300 neon-glow-hover shadow-lg shadow-neon-purple/50"
-          >
-            Join as Creator
-          </a>
+          <div class="text-center">
+            <a
+              href="https://app.anyagency.net"
+              target="_blank"
+              class="inline-block px-8 py-4 bg-gradient-to-r from-neon-purple to-neon-purple-dark text-white font-semibold rounded-lg hover:scale-105 transition-all duration-300 neon-glow-hover shadow-lg shadow-neon-purple/50"
+            >
+              Join as Creator
+            </a>
+          </div>
         </div>
 
         <!-- Right: Platform Dashboard Image -->

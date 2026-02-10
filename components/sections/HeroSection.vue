@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden grain-texture">
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden grain-texture pt-20 md:pt-0">
     <!-- Animated Gradient Background -->
     <div class="absolute inset-0 bg-gradient-to-br from-neon-purple/10 via-dark-bg to-neon-cyan/10"></div>
 
@@ -48,14 +48,22 @@
           </div>
         </div>
 
-        <!-- CTA Button -->
+        <!-- CTA Buttons -->
         <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-4"
           :class="{ 'animate-scale-in': isVisible }"
           style="animation-delay: 0.6s;"
         >
           <BaseButton variant="primary" @click="openModal" class="animate-glow-pulse">
             Launch Your Campaign
           </BaseButton>
+          <a
+            href="https://app.anyagency.net"
+            target="_blank"
+            class="px-8 py-4 text-white font-semibold border border-white/20 rounded-lg hover:bg-white/10 transition-all hover:scale-105"
+          >
+            Join as Creator
+          </a>
         </div>
 
         <!-- Scroll Indicator -->

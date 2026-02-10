@@ -1,5 +1,5 @@
 <template>
-  <section id="services" ref="sectionRef" class="py-24 relative">
+  <section id="services" ref="sectionRef" class="py-12 relative">
     <div class="section-container">
       <!-- Section Title -->
       <div class="text-center mb-16">

@@ -1,5 +1,5 @@
 <template>
-  <section id="cases" ref="sectionRef" class="py-24 relative overflow-hidden">
+  <section id="cases" ref="sectionRef" class="py-12 relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-b from-dark-charcoal to-dark-bg"></div>
 
     <div class="relative z-10 section-container">

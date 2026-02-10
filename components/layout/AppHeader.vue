@@ -8,11 +8,10 @@
         <!-- Logo -->
         <a
           href="/#hero"
-          class="flex items-center gap-3 hover:scale-105 transition-transform"
-          style="display: flex; align-items: center; gap: 0.75rem; max-width: 200px;"
+          class="flex items-center gap-1.5 md:gap-3 hover:scale-105 transition-transform"
         >
-          <AppLogo style="width: 36px; height: 36px; flex-shrink: 0;" />
-          <span class="text-2xl font-outfit font-black text-gradient" style="font-size: 1.5rem; font-weight: 900;">AnyAgency</span>
+          <AppLogo class="w-5 h-5 md:w-9 md:h-9 flex-shrink-0" />
+          <span class="text-base md:text-2xl font-outfit font-black text-gradient">AnyAgency</span>
         </a>
 
         <!-- Desktop Navigation -->
@@ -54,7 +53,7 @@
 
       <!-- Mobile Menu -->
       <Transition name="slide-down">
-        <div v-if="mobileMenuOpen" class="md:hidden mt-6 pb-6 space-y-4">
+        <div v-if="mobileMenuOpen" class="md:hidden mt-6 pb-6 space-y-4 bg-dark-charcoal/95 backdrop-blur-md rounded-2xl p-6 -mx-4">
           <a
             v-for="link in navLinks"
             :key="link.href"
@@ -64,17 +63,19 @@
           >
             {{ link.label }}
           </a>
-          <a
-            href="https://app.anyagency.net"
-            target="_blank"
-            class="block w-full px-6 py-3 text-center text-sm font-semibold text-white border border-white/20 rounded-lg hover:bg-white/10 transition-colors"
-            @click="closeMobileMenu"
-          >
-            Join as Creator
-          </a>
-          <BaseButton variant="primary" class="w-full" @click="openModalAndCloseMobileMenu">
-            Start Campaign
-          </BaseButton>
+          <div class="flex flex-col items-center gap-4 pt-4">
+            <a
+              href="https://app.anyagency.net"
+              target="_blank"
+              class="block px-8 py-3 text-center text-sm font-semibold text-white border border-white/20 rounded-lg hover:bg-white/10 transition-colors"
+              @click="closeMobileMenu"
+            >
+              Join as Creator
+            </a>
+            <BaseButton variant="primary" class="w-full max-w-xs" @click="openModalAndCloseMobileMenu">
+              Start Campaign
+            </BaseButton>
+          </div>
         </div>
       </Transition>
     </nav>

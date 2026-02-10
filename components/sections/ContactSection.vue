@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" ref="sectionRef" class="py-24 relative bg-dark-charcoal">
+  <section id="contact" ref="sectionRef" class="py-12 relative bg-dark-charcoal">
     <div class="section-container">
       <!-- Section Title -->
       <div class="text-center mb-16">
