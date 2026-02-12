@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden grain-texture pt-20 md:pt-0">
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden grain-texture pt-24 md:pt-36 xl:pt-32">
     <!-- Animated Gradient Background -->
     <div class="absolute inset-0 bg-gradient-to-br from-neon-purple/10 via-dark-bg to-neon-cyan/10"></div>
 
